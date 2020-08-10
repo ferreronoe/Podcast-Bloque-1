@@ -1,0 +1,422 @@
+//reset
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    text-decoration: none;
+
+}
+
+
+
+.container {
+    max-width: 1240px;
+}
+
+header nav {
+    height: 80px;
+
+    .logonav {
+        width: 36px;
+        height: 36px;
+        display: flex;
+        justify-content: start;
+        position: absolute;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        position: static;
+        width: auto;
+        background-color: $secondary-color;
+
+        li {
+            display: inline-block;
+
+            a {
+                margin: 24px;
+                font-family: $font1;
+                font-weight: 400;
+                font-size: 16px;
+                color: $primary-color;
+                letter-spacing: 0;
+                line-height: 28px;
+
+                &:hover {
+                    text-decoration: line-through;
+                    color: #00F3BB;
+                    font-weight: 500;
+                
+
+                &:active {
+                    text-decoration: line-through;
+                    color: $primary-color;
+                    font-weight: 500;
+                }
+
+            }
+
+            }
+        }
+    }
+}
+
+//Principal
+
+.main {
+
+    .container {
+        max-width: 1040px;
+
+        .titulo {
+            color: $primary-color;
+            font-family: $font2;
+            font-size: 64px;
+            font-weight: 400;
+            margin-top: 120px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            text-align: left;
+            width: 100%;
+        }
+
+        .world {
+            text-decoration: line-through;
+        }
+
+        .dot {
+            color: #0000EC;
+        }
+
+        p {
+            font-size: 16px;
+            font-family: $font1;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        .desktop {
+            display: block;
+        }
+
+
+        .btn {
+            background-color: #00F3BB;
+            color: $primary-color;
+            max-width: 226px;
+            height: 24px;
+            font-size: 18px;
+            font-family: $font1;
+            font-weight: 500;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            cursor: pointer;
+            margin-top: 56px;
+            margin-left: 0px;
+            display: flex;
+            justify-content: center;
+
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+                    text-decoration: none;
+                    color: $secondary-color;
+                }
+
+                &:active {
+                    color: $secondary-color;
+                    text-decoration: none;
+
+
+                }
+            }
+        }
+
+
+    }
+
+
+}
+
+
+//Podcast
+
+
+.episodios {
+
+    .container {
+        max-width: 1040px;
+
+        h2 {
+            margin-top: 204px;
+            margin-bottom: 26px;
+            font-size: 48px;
+            font-family: $font2;
+            font-weight: 400;
+            color: $secondary-color;
+        }
+
+        .podcast {
+            width: 100%;
+            margin-top: 26px;
+            display: grid;
+            gap: 72px;
+            grid-template-columns: 584px 584px;
+            grid-row: 232px 72px;
+            justify-content: center;
+            align-items: center;
+
+            .spotify {
+                width: 584px;
+                height: 232px;
+            }
+
+        }
+    }
+}
+
+
+//Origenes
+
+.origenes {
+
+    .container {
+        max-width: 1040px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 64px;
+
+
+        img {
+            max-width: 457.6px;
+        }
+
+        .nosotros {
+            max-width: 464px;
+
+            h2 {
+                font-size: 36px;
+                font-family: $font2;
+                font-weight: 400;
+                color: $primary-color;
+
+
+                p {
+                    margin-top: 253px;
+                    width: 464px;
+                    font-size: 16px;
+                    font-family: $font2;
+                    font-weight: 400;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+
+//Programadoras
+
+.estelares {
+
+    .container {
+        max-width: 1040px;
+
+        h2 {
+            margin-top: 64px;
+            font-size: 48px;
+            font-family: $font2;
+            font-weight: 400;
+            color: $primary-color;
+        }
+    }
+
+    .mujeres {
+        width: 100%;
+        margin-top: 36px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: auto;
+        padding: 0;
+
+    }
+
+    .programadoras {
+        width: 480px;
+        height: auto;
+        padding: auto 0;
+        margin: auto 0;
+    }
+
+}
+
+
+//SVG imagenes
+
+.temas-section {
+
+    .container {
+        max-width: 1040px;
+
+        h2 {
+            font-size: 48px;
+            font-family: $font2;
+            font-weight: 400;
+            color: $primary-color;
+            margin-top: 64px;
+            margin-bottom: 56px;
+        }
+
+        .svg {
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                width: 260px;
+                height: 130px;
+            }
+
+
+
+            h3 {
+                font-family: $font2;
+                font-weight: 600;
+                color: $primary-color;
+                font-size: 24px;
+                text-align: center;
+                margin-top: 13px;
+
+            }
+
+
+        }
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+//Novedades
+
+
+.novedades {
+
+    .container {
+        max-width: 100%;
+
+
+        .formaBottom {
+            height: 518px;
+            width: 100%;
+            margin-bottom: 0px;
+            z-index: -1;
+            background: linear-gradient(225deg, rgba(0, 0, 255, 1) 0%, rgba(0, 0, 163, 1) 100%);
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+
+
+            h2 {
+                font-size: 48px;
+                font-family: $font2;
+                font-weight: 400;
+                color: $secondary-color;
+                text-align: center;
+                padding-top: 213px;
+                padding-bottom: 36px;
+
+            }
+
+            .btn {
+                background-color: #00F3BB;
+                width: 345px;
+                height: 24px;
+                font-size: 18px;
+                font-family: $font1;
+                font-weight: 500;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                cursor: pointer;
+                display: flex;
+                margin-left: 547px;
+                color: $primary-color;
+
+                &:hover {
+                    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+                    text-decoration: none;
+                    color: $secondary-color;
+                }
+
+
+                
+            }
+
+
+        }
+
+
+    }
+
+
+}
+
+
+//Fondo diagonal
+.background {
+    width: 100%;
+    z-index: -1;
+    height: 1042px;
+    margin-top: 549px;
+    background: linear-gradient(225deg, rgba(0, 0, 255, 1) 0%, rgba(0, 0, 163, 1) 100%);
+    clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%);
+    position: absolute;
+}
+
+
+//Footer
+
+footer {
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            margin-top: 36px;
+            margin-bottom: 32px;
+            color: $primary-color;
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+        .iconos {
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+
+            li {
+                margin-left: 37px;
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,9 @@
+@import "../styles/mobile";
+
+@import "../styles/variables";
+
+@media (min-width: 780px) {
+    @import "../styles/desktop";
+    
+
+    }

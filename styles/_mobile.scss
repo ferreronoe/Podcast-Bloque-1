@@ -1,0 +1,473 @@
+
+  * {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    list-style:none;
+    text-decoration: none;
+
+
+  }
+
+
+  //Constantes  
+
+  $primary-color: #060A24;
+  $secondary-color: #ffffff;
+
+  $font1: 'IBM Plex Mono',
+  monospace;
+  $font2: 'IBM Plex Sans',
+  sans-serif;
+
+
+  .container {
+    max-width: calc(100% - 32px);
+    margin: 0 auto;
+
+  }
+
+
+  header {
+    background-color: #ffffff;
+
+    nav {
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 44px;
+
+
+
+      .hamburger-action {
+        display: none;
+      }
+
+      .hamburger-action:checked ~ .menu {
+        display: block;
+      }
+
+      .hamburger-action:checked ~ label .hamburger {
+        .bars {
+          display: none;
+        }
+        .close {
+          display: block;
+        }
+      }    
+
+      .hamburger {
+        .bars {
+          display: block;
+        }
+        .close {
+          display: none;
+        }
+      }  
+
+      .menu {
+        display: none;
+        background-color: #0000EC;
+        color: $secondary-color;
+        position: absolute;
+        width: 100%;
+        top: 44px;
+        left: 0;
+
+        li {
+          color: $secondary-color;
+          padding: 16px;
+          box-sizing: border-box;
+          font-family: $font1;
+
+          a {
+            text-decoration: none;
+            color: $secondary-color;
+
+            &:visited {
+              text-decoration: none;
+
+
+              &:active {
+                text-decoration: none;
+              }
+            }
+
+          }
+
+
+        }
+
+      }
+    }
+  }
+
+
+  //principal
+
+  .main {
+
+    .container {
+
+      .titulo {
+        color: $primary-color;
+        font-family: $font2;
+        font-size: 36px;
+        width: 60%;
+        font-weight: 400;
+        margin-top: 29px;
+      }
+
+      .world {
+        text-decoration: line-through;
+      }
+
+      .dot {
+        color: #0000EC;
+      }
+
+      p {
+        font-size: 14px;
+        font-family: $font1;
+        font-weight: 400;
+        line-height: 22px;
+        width: 100%;
+        margin-top: 16px;
+        margin-bottom: 27px;
+      }
+
+      .desktop {
+        display: none;
+      }
+
+
+      .btn {
+        background-color: #00F3BB;
+        color: $primary-color;
+        width: 100%;
+        font-size: 16px;
+        font-family: $font1;
+        font-weight: 500;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-bottom: 24px;
+        border: none;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+
+        &:hover {
+          color: $secondary-color;
+          background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+          text-decoration: none;
+
+        }
+
+        a {
+          text-decoration: none;
+
+          &:active {
+            color: $secondary-color;
+            text-decoration: none;
+
+            &:visited {
+              color: $secondary-color;
+              text-decoration: none;
+            }
+
+
+
+          }
+        }
+
+      }
+    }
+
+  }
+
+
+
+  //Podcast
+  .episodios {
+
+    .container {
+      max-width: 90%;
+
+      h2 {
+        margin-top: 104px;
+        margin-bottom: 10px;
+
+        font-size: 36px;
+        font-family: $font2;
+        font-weight: 400;
+        color: $secondary-color;
+      }
+
+      .podcast {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        flex-direction: column;
+
+        .spotify {
+          width: 92vw;
+          height: 232px;
+          margin-top: 10px;
+          border: none;
+
+
+        }
+      }
+    }
+  }
+
+
+
+  //Origenes
+
+  .origenes {
+    
+    .container {
+      max-width: 90%;
+      
+      img{
+        width: 100%;
+        margin-top: 48px;
+      }
+
+    .nosotros{
+
+      h2 {
+        font-size: 36px;
+        font-family: $font2;
+        font-weight: 400;
+        color: $primary-color;
+        margin-bottom: 14px;
+        margin-top: 27px;
+      }
+
+
+      p {
+        color: $primary-color;
+        font-family: $font1;
+        margin-top: 27px;
+        margin-bottom: 24px;
+        line-height: 22px;
+
+      }
+    }
+  }
+}
+
+
+
+
+
+//Programadoras
+
+
+  .estelares {
+
+    .container {
+
+      h2 {
+        font-size: 36px;
+        font-family: $font2;
+        font-weight: 400;
+        color: $primary-color;
+        margin-bottom: 14px;
+        margin-top: 27px;
+      }
+    }
+
+    .mujeres {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      flex-direction: column;
+
+      .programadoras {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+
+  }
+
+
+
+
+  //SVG
+
+  .temas-section {
+    font-family: $font2;
+    .container {
+      width: 100%;
+
+
+      h2 {
+        font-size: 36px;
+        font-weight: 400;
+        color: $primary-color;
+        margin-bottom: 14px;
+        margin-top: 27px;
+      }
+
+      .svg {
+        text-align: center;
+        /*width: 104px;*/
+        margin-bottom: 13px;
+        margin-top: 37px;
+        
+        
+        li {
+          /*width: 260px;*/
+          align-content: center;
+          margin-bottom: 36px;
+          margin-top: 65px;
+          list-style:none;
+
+
+        
+        h3 {
+          font-family: $font2;
+          font-weight: 600;
+          color: $primary-color;
+          font-size: 24px;
+          text-align: center;
+          margin-top: 13px;
+          margin-bottom: 13px;
+
+
+      }
+    
+
+    }
+  
+  }
+}
+
+}
+
+  //Últimas novedades
+
+
+  .novedades {
+
+    .container {
+      max-width: 100%;
+
+      .formaBottom {
+        height: 341px;
+        z-index: -1;
+        margin-top: 42px;
+        background: linear-gradient(225deg, rgba(0, 0, 255, 1) 0%, rgba(0, 0, 163, 1) 100%);
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+
+        h2 {
+          font-family: $font2;
+          color: $secondary-color;
+          font-weight: 400;
+          font-size: 36px;
+          line-height: 42px;
+          padding-top: 64px;
+          padding-right: 16px;
+          padding-left: 16px;
+          text-align: center;
+        }
+
+        .btn {
+          background-color: #00F3BB;
+          color: $primary-color;
+          width: 90%;
+          text-align: center;
+          font-size: 16px;
+          font-family: $font1;
+          font-weight: 500;
+          padding-top: 13px;
+          padding-bottom: 13px;
+          cursor: pointer;
+          margin-top: 49px;
+          margin-bottom: 67px;
+          margin-left: 16px;
+          margin-right: 16px;
+          border: none;
+          display: flex;
+          justify-content: center;
+
+
+
+          &:hover {
+            background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+            color: $secondary-color;
+
+          }
+
+          a {
+            text-decoration: none;
+
+            &:active {
+              color: $secondary-color;
+              text-decoration: none;
+
+              &:visited {
+                color: $secondary-color;
+                text-decoration: none;
+              }
+            }
+
+
+
+          }
+        }
+
+      }
+    }
+  }
+
+  //FORMAS
+
+  .background {
+    z-index: -1;
+    height: 1203.5px;
+    margin-top: 347px;
+    width: 100%;
+    background: linear-gradient(225deg, rgba(0, 0, 255, 1) 0%, rgba(0, 0, 163, 1) 100%);
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
+    position: absolute;
+  }
+
+  //Footer
+
+  footer {
+    .container{
+      text-align: center;
+
+      p{
+        font-family: $font1;
+        font-size: 14px;
+        color: $primary-color;
+        line-height: 22px;
+        margin-top: 24px;
+        margin-bottom: 16px;
+      }
+    
+      .iconos{
+        margin-bottom: 32px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        
+        a {
+          color: $primary-color;
+        }
+      }
+
+  }
+}
+
